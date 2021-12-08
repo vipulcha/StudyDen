@@ -1,8 +1,16 @@
+a { 
+  text-decoration: none;
+  font-family: 'Readex Pro', sans-serif;
+  color: white;
+}
+ a:hover{
+  color: rgb(104, 205, 245);
+}
 html {
-    background-color: #E4E9FD;
-    background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
+    
     min-height: 1000px;
     font-family: 'helvetica neue';
+    background-color:  #0b1121;
   }
   
   h1 {
@@ -10,17 +18,24 @@ html {
     padding: 10px;
   }
   
+  
   .box {
     max-width: 400px;
-    margin: 50px auto;
-    background: white;
+    background: #2a3246;
+    
     border-radius: 5px;
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    color: white;
+    margin-left: 60px;
+
   }
   
   #heading {
-    background-color: #A683E3;
+    background: linear-gradient(to right, #ffcc00 -25%, #ff9933 62%);
     text-align: center;
+    margin-top: 300px;
+    margin-left: 60px;
+    font-family: Avenir,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
   }
   
   .item {
@@ -28,6 +43,7 @@ html {
     display: flex;
     align-items: center;
     border-bottom: 1px solid #F1F1F1;
+    color: white;
   }
   
   .item:last-child {
@@ -36,11 +52,13 @@ html {
   
   input:checked+p {
     text-decoration: line-through;
-    text-decoration-color: #A683E3;
+    text-decoration-color: orange;
+    text-decoration-thickness: 4px;
   }
   
   input[type="checkbox"] {
     margin: 20px;
+    
   }
   
   p {
@@ -64,12 +82,13 @@ html {
     background-color: #A683E3;
     color: #fff;
     font-size: 30px;
-    padding-bottom: 6px;
     border-width: 0;
+    align-items: center;
   }
   
   input[type="text"] {
     text-align: center;
+    color: white;
     height: 60px;
     top: 10px;
     border: none;
@@ -85,8 +104,8 @@ html {
   }
   
   ::placeholder {
-    color: grey;
-    opacity: 1;
+    color: white;
+    opacity: 0.55;
   }
   
   footer {
@@ -94,3 +113,76 @@ html {
     color: rgba(0, 0, 0, 0.5);
     text-align: center;
   }
+  head{
+    background-color: #00204a;
+  }
+
+  .navbar{
+    height: 30px;
+  }
+  .body{
+    background-color: #00204a;
+  }
+  .navbarbg{
+    background: linear-gradient(to right, #ffcc00 -25%, #ff9933 62%);
+  }
+  .container{
+    height: 80px;
+    width: 100%;
+    display:flex;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-basis: 100;
+    padding-bottom: 20px;
+  }
+
+  .colossal{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: 35;
+    color: #ff6600;
+    font-style: italic;
+  }
+  .den{
+    font-size: 40px;
+    font-weight: 35;
+    color: rgb(60, 187, 37);
+}
+  .nav-title{
+    position: absolute;
+    padding-left: 60px;
+    
+  }
+  
+  .racist{
+    color: white;
+    font-family: Avenir,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 525;
+  }
+
+  input.check{
+    width: 20px;
+    height: 20px;
+  }
+
+  .navbar-header{
+    position: absolute;
+  }
+
+  .home{
+    flex-basis: 180px;
+    font-size: 20px;
+  }
+  .about{
+    flex-basis: 180px;
+    font-size: 20px;
+  }
+  .contact{
+    flex-basis: 180px;
+    font-size: 20px;
+  }
+ 

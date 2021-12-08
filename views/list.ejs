@@ -1,5 +1,24 @@
 <%- include("header") -%> 
+
 <link rel="stylesheet" href="liststyles.css">
+
+
+<nav class="navbar navbar-default">
+ 
+    <div class="navbar-header">
+        <p class="nav-title"><span class="colossal">Study</span><span class="den">DEN.</p>
+      </div>
+  <div class="container">
+    
+        <div class="home"><a href="/study" >Study Rooms</a></div>
+        <div class="about"><a href="/about">About us</a></div>
+        <div class="contact"><a href="/contact" >Contact Us</a></div>
+ 
+</div>
+</nav>
+
+
+<div class="todobox">
         <div class="box" id="heading">
             <h1> <%= listTitle %></h1>
         </div>
@@ -7,8 +26,8 @@
         <div class="box">
             <%  for(let i=0; i<newListItems.length; i++){ %>
                 <div class="item">
-                    <input type="checkbox">
-                    <p><%= newListItems[i] %> </p>
+                    <input class="check" type="checkbox">
+                    <p class="racist"><%= newListItems[i] %> </p>
                 </div>
                 
           <%  }  %>
@@ -19,5 +38,6 @@
         
             </form>
         </div>
+</div>
 
 <%- include("footer") -%> 
