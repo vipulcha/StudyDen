@@ -2,7 +2,6 @@
 
 <link rel="stylesheet" href="liststyles.css">
 
-
 <nav class="navbar navbar-default">
  
     <div class="navbar-header">
@@ -26,18 +25,75 @@
         <div class="box">
             <%  for(let i=0; i<newListItems.length; i++){ %>
                 <div class="item">
-                    <input class="check" type="checkbox">
+                    <input class="inputclock" class="check" type="checkbox">
                     <p class="racist"><%= newListItems[i] %> </p>
                 </div>
                 
           <%  }  %>
 
           <form class="item" action="/dashboard" method="post">
-            <input type="text" name="newItem" placeholder="New Item" autocomplete="off">
-            <button type="submit" name="list" value=<%= listTitle %>>+</button>
+            <input class="inputclock" type="text" name="newItem" placeholder="New Item" autocomplete="off">
+            <button  type="submit" name="list" value=<%= listTitle %>>+</button>
         
             </form>
         </div>
 </div>
 
+<!-- My JS -->
+
+
+
+
+<!-- My CSS -->
+
+<div class="minscss"><%= Minutes[0] %></div>
+<div class="seccss"><%= Minutes[1] %></div>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet"/>
+
+
+
+<!-- Heading -->
+
+
+<!-- Main Timer -->
+
+<div class=" timer">
+  <div class="row">   
+    <form class="time" action="/dashboard" method="post">
+      <input class="inputclockminutes" type="number" name="userminutes" placeholder="Enter Minutes" autocomplete="off">
+      <button  type="submit" name="kuchbhi"  value=<%= Minutes %>>+</button>
+
+      <input class="inputclockseconds" type="number" size="10" name="userseconds" placeholder="Enter Seconds" autocomplete="off">
+      <button  type="submit" name="list"  value=<%= Minutes %>>+</button> 
+      
+      
+      </form>
+
+
+      <h4 class="colon">:</h4>
+    
+  </div>
+</div>
+
+
+
+
+<!-- Finished Message -->
+<div class="my-5">
+  <h3 id="done" class="text-center"></h3>
+</div>
+
+<!-- Start Button and reset button-->
+<div class="pombuttons d-flex justify-content-center my-5">
+  <button class="btn" onclick="start_timer()">
+    <i class="fas fa-play fa-1x"></i>
+  </button>
+  
+</div>
+
 <%- include("footer") -%> 
+  
